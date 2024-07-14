@@ -1,0 +1,75 @@
+body {
+    background-color: #FAF0E6; /* Light Cream */
+    color: #333333; /* Very Dark Gray */
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) minmax(320px, 1.618fr); /* golden ratio */
+    grid-template-rows: auto auto;
+    align-items: baseline;
+    grid-template-areas: 
+        "title buffer"
+        "nav body"
+    ;
+}
+
+.title-section {
+    grid-area: title;
+    flex:1;
+    padding: 20px;
+    text-align: right;
+    padding-bottom: 0;
+    margin-left: 15vw;
+}
+
+.buffer-section {
+    grid-area: buffer;
+    padding-bottom: 0;
+}
+
+.nav-section {
+    flex: 1; /* Smaller section */
+    padding: 20px;
+    padding-top: 0;
+    background-color: #FAF0E6;
+    text-align: right;
+    grid-area: nav;
+    margin-left: 15vw;
+}
+
+.body-section {
+    flex: 1.618; /* Golden ratio */
+    padding: 20px;
+    padding-top: 0px;
+    grid-area: body;
+    margin-right: 15vw;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333333;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    content: '>';
+    padding-right: 5px;
+    font-style: normal;
+}
+
+nav ul li a.active {
+    font-style: italic;
+}
+
+a {
+    color: inherit; /* This will make the link color the same as the parent element's color */
+}
