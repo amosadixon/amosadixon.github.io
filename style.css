@@ -17,7 +17,6 @@ body {
 
 .title-section {
     grid-area: title;
-    flex:1;
     padding: 20px;
     text-align: right;
     padding-bottom: 0;
@@ -29,8 +28,7 @@ body {
     padding-bottom: 0;
 }
 
-.nav-section {
-    flex: 1; /* Smaller section */
+nav.nav-section {
     padding: 20px;
     padding-top: 0;
     background-color: #FAF0E6;
@@ -40,7 +38,6 @@ body {
 }
 
 .body-section {
-    flex: 1.618; /* Golden ratio */
     padding: 20px;
     padding-top: 0px;
     grid-area: body;
