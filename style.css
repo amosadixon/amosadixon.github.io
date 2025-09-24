@@ -44,6 +44,13 @@ nav.nav-section {
     margin-right: 15vw;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+    margin: 20px 0;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
