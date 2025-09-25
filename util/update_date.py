@@ -15,4 +15,4 @@ def find_replace(directory, find, replace):
             replace_string_in_file(filepath, find, replace)
 
 # usage
-find_replace('.', 'updated 02.17.2024', 'updated 09.24.2025')
+find_replace('.', 'updated 09.24.2025', 'updated 09.25.2025')
